@@ -1,0 +1,597 @@
+2020-07-02T12:46:48.454+0000 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [--add-opens, java.base/java.util=ALL-UNNAMED, --add-opens, java.base/java.lang=ALL-UNNAMED, --add-opens, java.base/java.lang.invoke=ALL-UNNAMED, --add-opens, java.prefs/java.util.prefs=ALL-UNNAMED, -XX:MaxMetaspaceSize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Xms256m, -Xmx512m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant]
+2020-07-02T12:46:48.802+0000 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=f8ebc9a3-a157-4a80-b274-74c94a79cba1,javaHome=/usr/lib/jvm/java-11-openjdk-11.0.7.10-4.amzn2.0.1.x86_64,daemonRegistryDir=/home/ec2-user/.gradle/daemon,pid=5481,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2020-07-02T12:46:48.852+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface docker0
+2020-07-02T12:46:48.854+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2020-07-02T12:46:48.855+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /172.17.0.1
+2020-07-02T12:46:48.855+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface eth0
+2020-07-02T12:46:48.855+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2020-07-02T12:46:48.864+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:489:feff:fe31:d524%eth0
+2020-07-02T12:46:48.865+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /172.31.26.45
+2020-07-02T12:46:48.865+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo
+2020-07-02T12:46:48.865+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+2020-07-02T12:46:48.865+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1%lo
+2020-07-02T12:46:48.866+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+2020-07-02T12:46:48.870+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]].
+2020-07-02T12:46:48.922+0000 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Thu Jul 02 12:46:48 UTC 2020, with address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:46:48.923+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:46:48.930+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=f8ebc9a3-a157-4a80-b274-74c94a79cba1,javaHome=/usr/lib/jvm/java-11-openjdk-11.0.7.10-4.amzn2.0.1.x86_64,daemonRegistryDir=/home/ec2-user/.gradle/daemon,pid=5481,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2020-07-02T12:46:48.932+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]], context: DefaultDaemonContext[uid=f8ebc9a3-a157-4a80-b274-74c94a79cba1,javaHome=/usr/lib/jvm/java-11-openjdk-11.0.7.10-4.amzn2.0.1.x86_64,daemonRegistryDir=/home/ec2-user/.gradle/daemon,pid=5481,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2020-07-02T12:46:48.942+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2020-07-02T12:46:48.945+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:46:48.954+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:46:48.957+0000 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+2020-07-02T12:46:48.959+0000 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+2020-07-02T12:46:48.990+0000 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+2020-07-02T12:46:48.994+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:55702 to /127.0.0.1:45897.
+2020-07-02T12:46:49.020+0000 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+2020-07-02T12:46:49.020+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:46:49.059+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 17: received class org.gradle.launcher.daemon.protocol.Build
+2020-07-02T12:46:49.059+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 17: Received non-IO message from client: Build{id=5ae6e5e8-6d1f-47cd-9589-15f61698e944, currentDir=/home/ec2-user/java-image-gallery}
+2020-07-02T12:46:49.060+0000 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=5ae6e5e8-6d1f-47cd-9589-15f61698e944, currentDir=/home/ec2-user/java-image-gallery}.
+2020-07-02T12:46:49.060+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=5ae6e5e8-6d1f-47cd-9589-15f61698e944, currentDir=/home/ec2-user/java-image-gallery} with connection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55702.
+2020-07-02T12:46:49.064+0000 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=5ae6e5e8-6d1f-47cd-9589-15f61698e944, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55702] after 0.0 minutes of idle
+2020-07-02T12:46:49.064+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:46:49.064+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:46:49.067+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2020-07-02T12:46:49.070+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:46:49.075+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:46:49.076+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2020-07-02T12:46:49.076+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:46:49.081+0000 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=5ae6e5e8-6d1f-47cd-9589-15f61698e944, currentDir=/home/ec2-user/java-image-gallery}. Dispatching build started information...
+2020-07-02T12:46:49.081+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@548fe0a0
+2020-07-02T12:46:49.087+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {PATH=/home/ec2-user/.sdkman/candidates/gradle/current/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ec2-user/.local/bin:/home/ec2-user/bin, HISTCONTROL=ignoredups, SDKMAN_VERSION=5.8.3+506, HISTSIZE=1000, TERM=linux, LANG=en_US.UTF-8, XDG_SESSION_ID=1, GRADLE_HOME=/home/ec2-user/.sdkman/candidates/gradle/current, MAIL=/var/spool/mail/ec2-user, SDKMAN_DIR=/home/ec2-user/.sdkman, LOGNAME=ec2-user, PWD=/home/ec2-user/java-image-gallery, SDKMAN_CANDIDATES_DIR=/home/ec2-user/.sdkman/candidates, LESSOPEN=||/usr/bin/lesspipe.sh %s, SHELL=/bin/bash, SDKMAN_CANDIDATES_API=https://api.sdkman.io/2, SSH_TTY=/dev/pts/0, SSH_CLIENT=3.16.146.0 48113 22, SDKMAN_PLATFORM=Linux64, OLDPWD=/home/ec2-user/.sdkman/candidates/gradle/current, USER=ec2-user, SSH_CONNECTION=3.16.146.0 48113 172.31.26.45 22, HOSTNAME=ip-172-31-26-45.us-east-2.compute.internal, XDG_RUNTIME_DIR=/run/user/1000, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:, SHLVL=1, HOME=/home/ec2-user}
+2020-07-02T12:46:49.097+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2020-07-02T12:46:49.097+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5481). The daemon log file: /home/ec2-user/.gradle/daemon/6.5.1/daemon-5481.out.log
+2020-07-02T12:46:49.104+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 519.0 MB]
+2020-07-02T12:46:49.116+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2020-07-02T12:46:49.116+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=f8ebc9a3-a157-4a80-b274-74c94a79cba1,javaHome=/usr/lib/jvm/java-11-openjdk-11.0.7.10-4.amzn2.0.1.x86_64,daemonRegistryDir=/home/ec2-user/.gradle/daemon,pid=5481,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/ec2-user/java-image-gallery/build.gradle' line: 61
+
+* What went wrong:
+A problem occurred evaluating root project 'java-image-gallery'.
+> Could not get unknown property 'edu' for object of type org.gradle.api.java.archives.internal.DefaultManifest.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 13s
+2020-07-02T12:46:58.284+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2020-07-02T12:46:58.300+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:46:58.301+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=5ae6e5e8-6d1f-47cd-9589-15f61698e944, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55702]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@39fa1733 with state Busy
+2020-07-02T12:46:58.301+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=5ae6e5e8-6d1f-47cd-9589-15f61698e944, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55702]
+2020-07-02T12:46:58.301+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2020-07-02T12:46:58.301+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:46:58.301+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:46:58.302+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2020-07-02T12:46:58.303+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:46:58.304+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:46:58.304+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:46:58.305+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@13cc3f07]
+2020-07-02T12:46:58.306+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 16: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@13cc3f07]
+2020-07-02T12:46:58.337+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=5ae6e5e8-6d1f-47cd-9589-15f61698e944, currentDir=/home/ec2-user/java-image-gallery}
+2020-07-02T12:46:58.441+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 17: received class org.gradle.launcher.daemon.protocol.CloseInput
+2020-07-02T12:46:58.441+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 17: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@39e0d1f1
+2020-07-02T12:46:58.447+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 17: received class org.gradle.launcher.daemon.protocol.Finished
+2020-07-02T12:46:58.447+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 17: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@65d95bac
+2020-07-02T12:46:58.447+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2020-07-02T12:46:58.447+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 17: received null
+2020-07-02T12:46:58.447+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 17: Received end-of-input from client.
+2020-07-02T12:46:58.449+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+2020-07-02T12:46:58.449+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 16: stopping connection
+2020-07-02T12:46:58.450+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 16: stopping connection
+2020-07-02T12:46:59.014+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:46:59.014+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:46:59.014+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:46:59.015+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:46:59.015+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:46:59.015+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:09.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:47:09.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:09.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:09.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:47:09.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:09.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:09.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:47:09.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:09.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:11.869+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:55708 to /127.0.0.1:45897.
+2020-07-02T12:47:11.892+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 48: received class org.gradle.launcher.daemon.protocol.Build
+2020-07-02T12:47:11.892+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 48: Received non-IO message from client: Build{id=07e00ab2-fa4d-40d3-b407-c27c2cece0fe, currentDir=/home/ec2-user/java-image-gallery}
+2020-07-02T12:47:11.892+0000 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=07e00ab2-fa4d-40d3-b407-c27c2cece0fe, currentDir=/home/ec2-user/java-image-gallery}.
+2020-07-02T12:47:11.894+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=07e00ab2-fa4d-40d3-b407-c27c2cece0fe, currentDir=/home/ec2-user/java-image-gallery} with connection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55708.
+2020-07-02T12:47:11.897+0000 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=07e00ab2-fa4d-40d3-b407-c27c2cece0fe, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55708] after 0.0 minutes of idle
+2020-07-02T12:47:11.897+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:47:11.897+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:47:11.897+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2020-07-02T12:47:11.898+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:11.901+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:11.901+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2020-07-02T12:47:11.901+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:47:11.902+0000 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=07e00ab2-fa4d-40d3-b407-c27c2cece0fe, currentDir=/home/ec2-user/java-image-gallery}. Dispatching build started information...
+2020-07-02T12:47:11.902+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@30322098
+2020-07-02T12:47:11.903+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {PATH=/home/ec2-user/.sdkman/candidates/gradle/current/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ec2-user/.local/bin:/home/ec2-user/bin, HISTCONTROL=ignoredups, SDKMAN_VERSION=5.8.3+506, HISTSIZE=1000, TERM=linux, LANG=en_US.UTF-8, XDG_SESSION_ID=1, GRADLE_HOME=/home/ec2-user/.sdkman/candidates/gradle/current, MAIL=/var/spool/mail/ec2-user, SDKMAN_DIR=/home/ec2-user/.sdkman, LOGNAME=ec2-user, PWD=/home/ec2-user/java-image-gallery, SDKMAN_CANDIDATES_DIR=/home/ec2-user/.sdkman/candidates, LESSOPEN=||/usr/bin/lesspipe.sh %s, SHELL=/bin/bash, SDKMAN_CANDIDATES_API=https://api.sdkman.io/2, SSH_TTY=/dev/pts/0, SSH_CLIENT=3.16.146.0 48113 22, SDKMAN_PLATFORM=Linux64, OLDPWD=/home/ec2-user/.sdkman/candidates/gradle/current, USER=ec2-user, SSH_CONNECTION=3.16.146.0 48113 172.31.26.45 22, HOSTNAME=ip-172-31-26-45.us-east-2.compute.internal, XDG_RUNTIME_DIR=/run/user/1000, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:, SHLVL=1, HOME=/home/ec2-user}
+2020-07-02T12:47:11.904+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2020-07-02T12:47:11.904+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5481). The daemon log file: /home/ec2-user/.gradle/daemon/6.5.1/daemon-5481.out.log
+2020-07-02T12:47:11.912+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 2nd build in daemon [uptime: 23.34 secs, performance: 97%, non-heap usage: 15% of 268.4 MB]
+2020-07-02T12:47:11.914+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2020-07-02T12:47:11.914+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=f8ebc9a3-a157-4a80-b274-74c94a79cba1,javaHome=/usr/lib/jvm/java-11-openjdk-11.0.7.10-4.amzn2.0.1.x86_64,daemonRegistryDir=/home/ec2-user/.gradle/daemon,pid=5481,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/ec2-user/java-image-gallery/build.gradle' line: 61
+
+* What went wrong:
+A problem occurred evaluating root project 'java-image-gallery'.
+> Could not get unknown property 'edu' for object of type org.gradle.api.java.archives.internal.DefaultManifest.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 2s
+2020-07-02T12:47:12.390+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2020-07-02T12:47:12.399+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:47:12.399+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=07e00ab2-fa4d-40d3-b407-c27c2cece0fe, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55708]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@39fa1733 with state Busy
+2020-07-02T12:47:12.399+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=07e00ab2-fa4d-40d3-b407-c27c2cece0fe, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55708]
+2020-07-02T12:47:12.399+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2020-07-02T12:47:12.400+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:47:12.400+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:47:12.400+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2020-07-02T12:47:12.401+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:12.401+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:12.401+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:47:12.402+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@66f39bdf]
+2020-07-02T12:47:12.402+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 16: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@66f39bdf]
+2020-07-02T12:47:12.406+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=07e00ab2-fa4d-40d3-b407-c27c2cece0fe, currentDir=/home/ec2-user/java-image-gallery}
+2020-07-02T12:47:12.504+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 48: received class org.gradle.launcher.daemon.protocol.CloseInput
+2020-07-02T12:47:12.505+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 48: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@36f525d8
+2020-07-02T12:47:12.506+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 48: received class org.gradle.launcher.daemon.protocol.Finished
+2020-07-02T12:47:12.506+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 48: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@3832dd76
+2020-07-02T12:47:12.506+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2020-07-02T12:47:12.507+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@3832dd76
+2020-07-02T12:47:12.507+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 16: stopping connection
+2020-07-02T12:47:12.511+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 48: received null
+2020-07-02T12:47:12.511+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 48: Received end-of-input from client.
+2020-07-02T12:47:12.511+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 16: stopping connection
+2020-07-02T12:47:19.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:47:19.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:47:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:20.110+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:55714 to /127.0.0.1:45897.
+2020-07-02T12:47:20.132+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 60: received class org.gradle.launcher.daemon.protocol.Build
+2020-07-02T12:47:20.132+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 60: Received non-IO message from client: Build{id=fe991f3d-225f-4089-8fdc-061ac8cb5970, currentDir=/home/ec2-user/java-image-gallery}
+2020-07-02T12:47:20.133+0000 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=fe991f3d-225f-4089-8fdc-061ac8cb5970, currentDir=/home/ec2-user/java-image-gallery}.
+2020-07-02T12:47:20.133+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=fe991f3d-225f-4089-8fdc-061ac8cb5970, currentDir=/home/ec2-user/java-image-gallery} with connection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55714.
+2020-07-02T12:47:20.135+0000 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=fe991f3d-225f-4089-8fdc-061ac8cb5970, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55714] after 0.0 minutes of idle
+2020-07-02T12:47:20.135+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:47:20.135+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:47:20.135+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2020-07-02T12:47:20.136+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:20.137+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:20.138+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2020-07-02T12:47:20.138+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:47:20.138+0000 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=fe991f3d-225f-4089-8fdc-061ac8cb5970, currentDir=/home/ec2-user/java-image-gallery}. Dispatching build started information...
+2020-07-02T12:47:20.138+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@5b5e9406
+2020-07-02T12:47:20.139+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {PATH=/home/ec2-user/.sdkman/candidates/gradle/current/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ec2-user/.local/bin:/home/ec2-user/bin, HISTCONTROL=ignoredups, SDKMAN_VERSION=5.8.3+506, HISTSIZE=1000, TERM=linux, LANG=en_US.UTF-8, XDG_SESSION_ID=1, GRADLE_HOME=/home/ec2-user/.sdkman/candidates/gradle/current, MAIL=/var/spool/mail/ec2-user, SDKMAN_DIR=/home/ec2-user/.sdkman, LOGNAME=ec2-user, PWD=/home/ec2-user/java-image-gallery, SDKMAN_CANDIDATES_DIR=/home/ec2-user/.sdkman/candidates, LESSOPEN=||/usr/bin/lesspipe.sh %s, SHELL=/bin/bash, SDKMAN_CANDIDATES_API=https://api.sdkman.io/2, SSH_TTY=/dev/pts/0, SSH_CLIENT=3.16.146.0 48113 22, SDKMAN_PLATFORM=Linux64, OLDPWD=/home/ec2-user/.sdkman/candidates/gradle/current, USER=ec2-user, SSH_CONNECTION=3.16.146.0 48113 172.31.26.45 22, HOSTNAME=ip-172-31-26-45.us-east-2.compute.internal, XDG_RUNTIME_DIR=/run/user/1000, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:, SHLVL=1, HOME=/home/ec2-user}
+2020-07-02T12:47:20.140+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2020-07-02T12:47:20.140+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5481). The daemon log file: /home/ec2-user/.gradle/daemon/6.5.1/daemon-5481.out.log
+2020-07-02T12:47:20.144+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 3rd build in daemon [uptime: 31.572 secs, performance: 97%, non-heap usage: 16% of 268.4 MB]
+2020-07-02T12:47:20.146+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2020-07-02T12:47:20.146+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=f8ebc9a3-a157-4a80-b274-74c94a79cba1,javaHome=/usr/lib/jvm/java-11-openjdk-11.0.7.10-4.amzn2.0.1.x86_64,daemonRegistryDir=/home/ec2-user/.gradle/daemon,pid=5481,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/ec2-user/java-image-gallery/build.gradle' line: 61
+
+* What went wrong:
+A problem occurred evaluating root project 'java-image-gallery'.
+> Could not get unknown property 'edu' for object of type org.gradle.api.java.archives.internal.DefaultManifest.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+2020-07-02T12:47:20.564+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2020-07-02T12:47:20.572+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:47:20.572+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=fe991f3d-225f-4089-8fdc-061ac8cb5970, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55714]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@39fa1733 with state Busy
+2020-07-02T12:47:20.572+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=fe991f3d-225f-4089-8fdc-061ac8cb5970, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55714]
+2020-07-02T12:47:20.573+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2020-07-02T12:47:20.573+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:47:20.573+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:47:20.573+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2020-07-02T12:47:20.574+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:20.574+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:20.575+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:47:20.576+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@6a9a34ad]
+2020-07-02T12:47:20.576+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 16: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@6a9a34ad]
+2020-07-02T12:47:20.583+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=fe991f3d-225f-4089-8fdc-061ac8cb5970, currentDir=/home/ec2-user/java-image-gallery}
+2020-07-02T12:47:20.680+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 60: received class org.gradle.launcher.daemon.protocol.CloseInput
+2020-07-02T12:47:20.680+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 60: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@213db5d3
+2020-07-02T12:47:20.682+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 60: received class org.gradle.launcher.daemon.protocol.Finished
+2020-07-02T12:47:20.682+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 60: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@2ffa4f84
+2020-07-02T12:47:20.683+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2020-07-02T12:47:20.683+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 60: received null
+2020-07-02T12:47:20.683+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 60: Received end-of-input from client.
+2020-07-02T12:47:20.683+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+2020-07-02T12:47:20.683+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 16: stopping connection
+2020-07-02T12:47:20.684+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 16: stopping connection
+2020-07-02T12:47:29.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:47:29.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:29.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:47:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:39.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:47:39.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:39.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:39.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:47:39.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:39.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:39.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:47:39.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:39.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:49.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:47:49.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:47:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:47:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:49.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:59.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:47:59.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:59.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:59.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:47:59.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:59.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:47:59.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:47:59.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:47:59.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:09.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:09.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:09.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:09.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:09.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:09.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:09.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:09.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:09.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:19.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:19.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:29.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:29.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:29.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:39.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:39.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:39.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:39.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:39.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:39.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:39.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:39.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:39.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:49.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:49.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:49.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:59.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:59.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:59.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:59.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:59.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:59.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:48:59.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:48:59.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:48:59.014+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:00.587+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:55732 to /127.0.0.1:45897.
+2020-07-02T12:49:00.613+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 73: received class org.gradle.launcher.daemon.protocol.Build
+2020-07-02T12:49:00.613+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 73: Received non-IO message from client: Build{id=e1db1c98-6058-449d-a426-ea323e8d35ca, currentDir=/home/ec2-user/java-image-gallery}
+2020-07-02T12:49:00.614+0000 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=e1db1c98-6058-449d-a426-ea323e8d35ca, currentDir=/home/ec2-user/java-image-gallery}.
+2020-07-02T12:49:00.614+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=e1db1c98-6058-449d-a426-ea323e8d35ca, currentDir=/home/ec2-user/java-image-gallery} with connection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55732.
+2020-07-02T12:49:00.615+0000 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=e1db1c98-6058-449d-a426-ea323e8d35ca, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55732] after 1.0 minutes of idle
+2020-07-02T12:49:00.616+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:49:00.616+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:49:00.616+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2020-07-02T12:49:00.617+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:00.618+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:00.619+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2020-07-02T12:49:00.619+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:49:00.619+0000 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=e1db1c98-6058-449d-a426-ea323e8d35ca, currentDir=/home/ec2-user/java-image-gallery}. Dispatching build started information...
+2020-07-02T12:49:00.619+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 75: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@27f701be
+2020-07-02T12:49:00.622+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {PATH=/home/ec2-user/.sdkman/candidates/gradle/current/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ec2-user/.local/bin:/home/ec2-user/bin, HISTCONTROL=ignoredups, SDKMAN_VERSION=5.8.3+506, HISTSIZE=1000, TERM=xterm, LANG=en_US.UTF-8, XDG_SESSION_ID=2, GRADLE_HOME=/home/ec2-user/.sdkman/candidates/gradle/current, MAIL=/var/spool/mail/ec2-user, SDKMAN_DIR=/home/ec2-user/.sdkman, LOGNAME=ec2-user, PWD=/home/ec2-user/java-image-gallery, SDKMAN_CANDIDATES_DIR=/home/ec2-user/.sdkman/candidates, LESSOPEN=||/usr/bin/lesspipe.sh %s, SHELL=/bin/bash, SDKMAN_CANDIDATES_API=https://api.sdkman.io/2, SSH_TTY=/dev/pts/0, SSH_CLIENT=23.28.126.10 50819 22, SDKMAN_PLATFORM=Linux64, OLDPWD=/home/ec2-user/.sdkman/candidates/gradle/current, USER=ec2-user, SSH_CONNECTION=23.28.126.10 50819 172.31.26.45 22, HOSTNAME=ip-172-31-26-45.us-east-2.compute.internal, XDG_RUNTIME_DIR=/run/user/1000, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:, SHLVL=1, HOME=/home/ec2-user}
+2020-07-02T12:49:00.627+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2020-07-02T12:49:00.627+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5481). The daemon log file: /home/ec2-user/.gradle/daemon/6.5.1/daemon-5481.out.log
+2020-07-02T12:49:00.629+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 4th build in daemon [uptime: 2 mins 12.057 secs, performance: 98%, non-heap usage: 16% of 268.4 MB]
+2020-07-02T12:49:00.630+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2020-07-02T12:49:00.631+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=f8ebc9a3-a157-4a80-b274-74c94a79cba1,javaHome=/usr/lib/jvm/java-11-openjdk-11.0.7.10-4.amzn2.0.1.x86_64,daemonRegistryDir=/home/ec2-user/.gradle/daemon,pid=5481,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/ec2-user/java-image-gallery/build.gradle' line: 61
+
+* What went wrong:
+A problem occurred evaluating root project 'java-image-gallery'.
+> Could not get unknown property 'edu' for object of type org.gradle.api.java.archives.internal.DefaultManifest.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 2s
+2020-07-02T12:49:01.116+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2020-07-02T12:49:01.121+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:49:01.121+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=e1db1c98-6058-449d-a426-ea323e8d35ca, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55732]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@39fa1733 with state Busy
+2020-07-02T12:49:01.121+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=e1db1c98-6058-449d-a426-ea323e8d35ca, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55732]
+2020-07-02T12:49:01.121+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2020-07-02T12:49:01.121+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:49:01.121+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:49:01.121+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2020-07-02T12:49:01.122+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:01.123+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:01.123+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:49:01.123+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@a915778]
+2020-07-02T12:49:01.123+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 72: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@a915778]
+2020-07-02T12:49:01.125+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=e1db1c98-6058-449d-a426-ea323e8d35ca, currentDir=/home/ec2-user/java-image-gallery}
+2020-07-02T12:49:01.243+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 73: received class org.gradle.launcher.daemon.protocol.CloseInput
+2020-07-02T12:49:01.244+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 73: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@70b50fda
+2020-07-02T12:49:01.246+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 73: received class org.gradle.launcher.daemon.protocol.Finished
+2020-07-02T12:49:01.246+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 73: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@7e72ffbc
+2020-07-02T12:49:01.246+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2020-07-02T12:49:01.246+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 73: received null
+2020-07-02T12:49:01.246+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 73: Received end-of-input from client.
+2020-07-02T12:49:01.246+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+2020-07-02T12:49:01.247+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 72: stopping connection
+2020-07-02T12:49:01.250+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 72: stopping connection
+2020-07-02T12:49:09.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:49:09.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:09.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:09.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:49:09.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:09.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:19.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:49:19.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:49:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:19.014+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:19.015+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:49:19.015+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:19.015+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:29.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:49:29.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:29.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:49:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:29.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:49:29.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:29.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:39.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:49:39.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:39.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:39.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:49:39.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:39.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:39.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:49:39.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:39.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:49.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:49:49.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:49.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:49:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:49.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:49:49.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:49.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:59.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:49:59.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:59.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:59.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:49:59.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:59.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:49:59.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:49:59.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:49:59.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:09.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:50:09.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:09.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:09.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:50:09.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:09.014+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:09.014+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:50:09.015+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:09.015+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:19.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:50:19.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:19.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:50:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:50:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:19.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:29.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:50:29.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:50:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:50:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:29.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:39.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:50:39.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:39.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:39.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:50:39.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:39.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:39.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:50:39.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:39.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:43.040+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:55738 to /127.0.0.1:45897.
+2020-07-02T12:50:43.080+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 100: received class org.gradle.launcher.daemon.protocol.Build
+2020-07-02T12:50:43.080+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 100: Received non-IO message from client: Build{id=ce1d9a49-3413-4229-ba7f-dd491e6ca126, currentDir=/home/ec2-user/java-image-gallery}
+2020-07-02T12:50:43.081+0000 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=ce1d9a49-3413-4229-ba7f-dd491e6ca126, currentDir=/home/ec2-user/java-image-gallery}.
+2020-07-02T12:50:43.081+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=ce1d9a49-3413-4229-ba7f-dd491e6ca126, currentDir=/home/ec2-user/java-image-gallery} with connection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55738.
+2020-07-02T12:50:43.083+0000 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=ce1d9a49-3413-4229-ba7f-dd491e6ca126, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55738] after 1.0 minutes of idle
+2020-07-02T12:50:43.083+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:50:43.086+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:50:43.086+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2020-07-02T12:50:43.087+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:43.088+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:43.089+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2020-07-02T12:50:43.089+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:50:43.090+0000 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=ce1d9a49-3413-4229-ba7f-dd491e6ca126, currentDir=/home/ec2-user/java-image-gallery}. Dispatching build started information...
+2020-07-02T12:50:43.090+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 102: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@aa9825d
+2020-07-02T12:50:43.092+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {PATH=/home/ec2-user/.sdkman/candidates/gradle/current/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ec2-user/.local/bin:/home/ec2-user/bin, HISTCONTROL=ignoredups, SDKMAN_VERSION=5.8.3+506, HISTSIZE=1000, TERM=xterm, LANG=en_US.UTF-8, XDG_SESSION_ID=2, GRADLE_HOME=/home/ec2-user/.sdkman/candidates/gradle/current, MAIL=/var/spool/mail/ec2-user, SDKMAN_DIR=/home/ec2-user/.sdkman, LOGNAME=ec2-user, PWD=/home/ec2-user/java-image-gallery, SDKMAN_CANDIDATES_DIR=/home/ec2-user/.sdkman/candidates, LESSOPEN=||/usr/bin/lesspipe.sh %s, SHELL=/bin/bash, SDKMAN_CANDIDATES_API=https://api.sdkman.io/2, SSH_TTY=/dev/pts/0, SSH_CLIENT=23.28.126.10 50819 22, SDKMAN_PLATFORM=Linux64, OLDPWD=/home/ec2-user/.sdkman/candidates/gradle/current, USER=ec2-user, SSH_CONNECTION=23.28.126.10 50819 172.31.26.45 22, HOSTNAME=ip-172-31-26-45.us-east-2.compute.internal, XDG_RUNTIME_DIR=/run/user/1000, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:, SHLVL=1, HOME=/home/ec2-user}
+2020-07-02T12:50:43.094+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2020-07-02T12:50:43.094+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5481). The daemon log file: /home/ec2-user/.gradle/daemon/6.5.1/daemon-5481.out.log
+2020-07-02T12:50:43.099+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 5th build in daemon [uptime: 3 mins 54.525 secs, performance: 98%, non-heap usage: 16% of 268.4 MB]
+2020-07-02T12:50:43.100+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2020-07-02T12:50:43.100+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=f8ebc9a3-a157-4a80-b274-74c94a79cba1,javaHome=/usr/lib/jvm/java-11-openjdk-11.0.7.10-4.amzn2.0.1.x86_64,daemonRegistryDir=/home/ec2-user/.gradle/daemon,pid=5481,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'all' not found in root project 'java-image-gallery'.
+
+* Try:
+Run gradle tasks to get a list of available tasks. Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 3s
+2020-07-02T12:50:43.916+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2020-07-02T12:50:43.927+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:50:43.928+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=ce1d9a49-3413-4229-ba7f-dd491e6ca126, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55738]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@39fa1733 with state Busy
+2020-07-02T12:50:43.928+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=ce1d9a49-3413-4229-ba7f-dd491e6ca126, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55738]
+2020-07-02T12:50:43.928+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2020-07-02T12:50:43.932+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:50:43.932+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:50:43.932+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2020-07-02T12:50:43.933+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:43.934+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:43.935+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@219fbc15]
+2020-07-02T12:50:43.935+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 99: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@219fbc15]
+2020-07-02T12:50:43.935+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:50:43.937+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=ce1d9a49-3413-4229-ba7f-dd491e6ca126, currentDir=/home/ec2-user/java-image-gallery}
+2020-07-02T12:50:44.067+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 100: received class org.gradle.launcher.daemon.protocol.CloseInput
+2020-07-02T12:50:44.067+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 100: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@7e872567
+2020-07-02T12:50:44.076+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 100: received class org.gradle.launcher.daemon.protocol.Finished
+2020-07-02T12:50:44.076+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 100: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@7040d4c7
+2020-07-02T12:50:44.076+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2020-07-02T12:50:44.076+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 100: received null
+2020-07-02T12:50:44.076+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 100: Received end-of-input from client.
+2020-07-02T12:50:44.076+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@7040d4c7
+2020-07-02T12:50:44.081+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 99: stopping connection
+2020-07-02T12:50:44.082+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 99: stopping connection
+2020-07-02T12:50:49.011+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:50:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2020-07-02T12:50:49.012+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:49.013+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:51.587+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:55746 to /127.0.0.1:45897.
+2020-07-02T12:50:51.622+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 126: received class org.gradle.launcher.daemon.protocol.Build
+2020-07-02T12:50:51.622+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 126: Received non-IO message from client: Build{id=7224c5a0-c946-4cd1-8909-3e9b8d87c21e, currentDir=/home/ec2-user/java-image-gallery}
+2020-07-02T12:50:51.622+0000 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=7224c5a0-c946-4cd1-8909-3e9b8d87c21e, currentDir=/home/ec2-user/java-image-gallery}.
+2020-07-02T12:50:51.622+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=7224c5a0-c946-4cd1-8909-3e9b8d87c21e, currentDir=/home/ec2-user/java-image-gallery} with connection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55746.
+2020-07-02T12:50:51.623+0000 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=7224c5a0-c946-4cd1-8909-3e9b8d87c21e, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55746] after 0.0 minutes of idle
+2020-07-02T12:50:51.624+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:50:51.624+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:50:51.624+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2020-07-02T12:50:51.625+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:51.626+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:51.627+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2020-07-02T12:50:51.627+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:50:51.627+0000 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=7224c5a0-c946-4cd1-8909-3e9b8d87c21e, currentDir=/home/ec2-user/java-image-gallery}. Dispatching build started information...
+2020-07-02T12:50:51.627+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 102: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@28e81f
+2020-07-02T12:50:51.627+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {PATH=/home/ec2-user/.sdkman/candidates/gradle/current/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ec2-user/.local/bin:/home/ec2-user/bin, HISTCONTROL=ignoredups, SDKMAN_VERSION=5.8.3+506, HISTSIZE=1000, TERM=xterm, LANG=en_US.UTF-8, XDG_SESSION_ID=2, GRADLE_HOME=/home/ec2-user/.sdkman/candidates/gradle/current, MAIL=/var/spool/mail/ec2-user, SDKMAN_DIR=/home/ec2-user/.sdkman, LOGNAME=ec2-user, PWD=/home/ec2-user/java-image-gallery, SDKMAN_CANDIDATES_DIR=/home/ec2-user/.sdkman/candidates, LESSOPEN=||/usr/bin/lesspipe.sh %s, SHELL=/bin/bash, SDKMAN_CANDIDATES_API=https://api.sdkman.io/2, SSH_TTY=/dev/pts/0, SSH_CLIENT=23.28.126.10 50819 22, SDKMAN_PLATFORM=Linux64, OLDPWD=/home/ec2-user/.sdkman/candidates/gradle/current, USER=ec2-user, SSH_CONNECTION=23.28.126.10 50819 172.31.26.45 22, HOSTNAME=ip-172-31-26-45.us-east-2.compute.internal, XDG_RUNTIME_DIR=/run/user/1000, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:, SHLVL=1, HOME=/home/ec2-user}
+2020-07-02T12:50:51.627+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2020-07-02T12:50:51.628+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5481). The daemon log file: /home/ec2-user/.gradle/daemon/6.5.1/daemon-5481.out.log
+2020-07-02T12:50:51.635+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 6th build in daemon [uptime: 4 mins 3.061 secs, performance: 98%, non-heap usage: 17% of 268.4 MB]
+2020-07-02T12:50:51.637+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2020-07-02T12:50:51.637+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=f8ebc9a3-a157-4a80-b274-74c94a79cba1,javaHome=/usr/lib/jvm/java-11-openjdk-11.0.7.10-4.amzn2.0.1.x86_64,daemonRegistryDir=/home/ec2-user/.gradle/daemon,pid=5481,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+BUILD SUCCESSFUL in 2s
+1 actionable task: 1 executed
+2020-07-02T12:50:52.273+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2020-07-02T12:50:52.284+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:50:52.284+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=7224c5a0-c946-4cd1-8909-3e9b8d87c21e, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55746]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@39fa1733 with state Busy
+2020-07-02T12:50:52.284+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=7224c5a0-c946-4cd1-8909-3e9b8d87c21e, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55746]
+2020-07-02T12:50:52.284+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2020-07-02T12:50:52.285+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:50:52.285+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:50:52.286+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2020-07-02T12:50:52.286+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:52.287+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:52.287+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@54ba3698]
+2020-07-02T12:50:52.287+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 99: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@54ba3698]
+2020-07-02T12:50:52.288+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:50:52.290+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=7224c5a0-c946-4cd1-8909-3e9b8d87c21e, currentDir=/home/ec2-user/java-image-gallery}
+2020-07-02T12:50:52.292+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 126: received class org.gradle.launcher.daemon.protocol.CloseInput
+2020-07-02T12:50:52.293+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 126: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@6da0125c
+2020-07-02T12:50:52.301+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 126: received class org.gradle.launcher.daemon.protocol.Finished
+2020-07-02T12:50:52.301+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 126: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@6367e198
+2020-07-02T12:50:52.301+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2020-07-02T12:50:52.301+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 126: received null
+2020-07-02T12:50:52.301+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 126: Received end-of-input from client.
+2020-07-02T12:50:52.301+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+2020-07-02T12:50:52.301+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 99: stopping connection
+2020-07-02T12:50:52.304+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 99: stopping connection
+2020-07-02T12:50:57.043+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:55752 to /127.0.0.1:45897.
+2020-07-02T12:50:57.073+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 139: received class org.gradle.launcher.daemon.protocol.Build
+2020-07-02T12:50:57.073+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 139: Received non-IO message from client: Build{id=68a6442d-acc5-4394-8d3c-e70e435d0c23, currentDir=/home/ec2-user/java-image-gallery}
+2020-07-02T12:50:57.074+0000 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=68a6442d-acc5-4394-8d3c-e70e435d0c23, currentDir=/home/ec2-user/java-image-gallery}.
+2020-07-02T12:50:57.074+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=68a6442d-acc5-4394-8d3c-e70e435d0c23, currentDir=/home/ec2-user/java-image-gallery} with connection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55752.
+2020-07-02T12:50:57.080+0000 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=68a6442d-acc5-4394-8d3c-e70e435d0c23, currentDir=/home/ec2-user/java-image-gallery}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45897 to /127.0.0.1:55752] after 0.0 minutes of idle
+2020-07-02T12:50:57.081+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:50:57.081+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [540cd877-11ac-478f-a259-4ddd16f30ce7 port:45897, addresses:[localhost/127.0.0.1]]
+2020-07-02T12:50:57.081+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2020-07-02T12:50:57.085+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2020-07-02T12:50:57.091+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2020-07-02T12:50:57.091+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2020-07-02T12:50:57.091+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2020-07-02T12:50:57.092+0000 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=68a6442d-acc5-4394-8d3c-e70e435d0c23, currentDir=/home/ec2-user/java-image-gallery}. Dispatching build started information...
+2020-07-02T12:50:57.092+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 102: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@47465100
+2020-07-02T12:50:57.094+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {PATH=/home/ec2-user/.sdkman/candidates/gradle/current/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ec2-user/.local/bin:/home/ec2-user/bin, HISTCONTROL=ignoredups, SDKMAN_VERSION=5.8.3+506, HISTSIZE=1000, TERM=xterm, LANG=en_US.UTF-8, XDG_SESSION_ID=2, GRADLE_HOME=/home/ec2-user/.sdkman/candidates/gradle/current, MAIL=/var/spool/mail/ec2-user, SDKMAN_DIR=/home/ec2-user/.sdkman, LOGNAME=ec2-user, PWD=/home/ec2-user/java-image-gallery, SDKMAN_CANDIDATES_DIR=/home/ec2-user/.sdkman/candidates, LESSOPEN=||/usr/bin/lesspipe.sh %s, SHELL=/bin/bash, SDKMAN_CANDIDATES_API=https://api.sdkman.io/2, SSH_TTY=/dev/pts/0, SSH_CLIENT=23.28.126.10 50819 22, SDKMAN_PLATFORM=Linux64, OLDPWD=/home/ec2-user/.sdkman/candidates/gradle/current, USER=ec2-user, SSH_CONNECTION=23.28.126.10 50819 172.31.26.45 22, HOSTNAME=ip-172-31-26-45.us-east-2.compute.internal, XDG_RUNTIME_DIR=/run/user/1000, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:, SHLVL=1, HOME=/home/ec2-user}
+2020-07-02T12:50:57.095+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2020-07-02T12:50:57.095+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 5481). The daemon log file: /home/ec2-user/.gradle/daemon/6.5.1/daemon-5481.out.log
+2020-07-02T12:50:57.100+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 7th build in daemon [uptime: 4 mins 8.525 secs, performance: 98%, non-heap usage: 17% of 268.4 MB]
+2020-07-02T12:50:57.105+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2020-07-02T12:50:57.105+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=f8ebc9a3-a157-4a80-b274-74c94a79cba1,javaHome=/usr/lib/jvm/java-11-openjdk-11.0.7.10-4.amzn2.0.1.x86_64,daemonRegistryDir=/home/ec2-user/.gradle/daemon,pid=5481,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
